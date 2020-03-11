@@ -20,6 +20,11 @@ class ResponseFactory
     {
         $this->rootView = $name;
     }
+    
+    public function getRootView()
+    {
+        return $this->rootView;
+    }
 
     public function share($key, $value = null)
     {
